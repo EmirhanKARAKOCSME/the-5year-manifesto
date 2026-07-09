@@ -1,9 +1,19 @@
-number1 = 10
-number2 = 30.5
+# we should get user's numbers
 
-# I have mastered type conversion to robustly handle edge cases, making my calculator project significantly more resilient
+number1 = input()
+operation = input()
+number2 = input()
+
+number1 = float(number1)
+number2 = float(number2)
+
+if operation == "+":
+    print(number1+number2)
+elif operation == "-":
+    print(number1-number2)
+elif operation == "*":
+    print(number1*number2)
+else :
+    print(number1/number2)    
 
 
-number2 = int(number2)
-
-print(number2+ number1)
